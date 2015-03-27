@@ -532,6 +532,7 @@ header > .personal-menu > .buttons > .menu {
     height: 19px;
     line-height: 21px;
     padding-left: 4px;
+    vertical-align: middle;
     display: inline-block;
 }
 .container > .main > .search-bar > .wrapper > .search > .btn {
@@ -542,6 +543,7 @@ header > .personal-menu > .buttons > .menu {
     width: 27px;
     height: 23px;
     margin-left: -1px;
+    vertical-align: middle;
     background: url("images/ico_mail_150224.png") no-repeat scroll 5px 4px transparent;
 }
 .container > .main > .search-bar > .wrapper > .search > .detail-button {
@@ -660,8 +662,8 @@ header > .personal-menu > .buttons > .menu {
     border: 1px solid #B4B4B4;
     border-radius: 3.1px;
     height: 27px;
-    line-height: 24px;
-    padding: 0px 1px;
+    line-height: 26px;
+    padding: 0px 3px;
     overflow: visible;
     text-decoration: none;
     margin: 0px 2px 0px 0px;
