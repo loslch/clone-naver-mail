@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html {
     font-size: 9pt;
     font-family: "돋움", "Dotum";
@@ -754,7 +756,7 @@ header > .personal-menu > .buttons > .menu {
     min-width: 800px;
     min-height: 480px;
     position: absolute;
-    top: 179;
+    top: 179px;
     bottom: 0;
     right: 0;
     left: 0;
