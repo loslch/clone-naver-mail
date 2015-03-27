@@ -1,0 +1,1007 @@
+html {
+    font-size: 9pt;
+    font-family: "돋움", "Dotum";
+}
+body {
+    margin: 0;
+    position: relative;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+div, header, footer, section, span {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body, button, input, select, textarea {
+    font-family: "돋움",Dotum,Helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-size: 12px;
+}
+ul, ol, dl, li {
+    list-style: none;
+}
+input[type=checkbox] + label:after {
+    opacity: 0;
+}
+input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+
+header {
+    width: 100%;
+    height: 47px;
+    background: #019A30;
+    border-bottom: 1px solid #008128;
+    position: fixed;
+    top: 0;
+    min-width: 800px;
+}
+
+header > .logo {
+    height: 100%;
+    float: left;
+    margin-left: 14px;
+}
+header > .logo > .naver {
+    width: 58px;
+    height: 21px;
+    margin: 14px 0 0 0;
+    float: left;
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll 0px -70px transparent;
+}
+header > .logo > .mail {
+    width: 67px;
+    height: 21px;
+    margin: 14px 0 0 3px;
+    float: left;
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll 0px -94px transparent;
+}
+
+header > .navigation {
+    width: 100%;
+    height: 100%;
+}
+header > .navigation > .top_buttons {
+    width: 450px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+header > .navigation > .top_buttons > li {
+    margin-left: 15px;
+    display: inline-block;
+    list-style: none;
+}
+header > .navigation > .top_buttons > li > a {
+    width: 30px;
+    height: 29px;
+    display: block;
+}
+header > .navigation > .top_buttons > .me {
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll 1px -2px transparent;
+}
+header > .navigation > .top_buttons > .mail {
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll -48px -35px transparent;
+}
+header > .navigation > .top_buttons > .note {
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll -95px -2px transparent;
+}
+header > .navigation > .top_buttons > .calendar {
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll -144px -2px transparent;
+}
+header > .navigation > .top_buttons > .memo {
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll -191px -2px transparent;
+}
+header > .navigation > .top_buttons > .contact {
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll -239px -2px transparent;
+}
+header > .navigation > .top_buttons > .drive {
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll -286px -2px transparent;
+}
+header > .navigation > .top_buttons > .office {
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll -335px -2px transparent;
+}
+header > .navigation > .top_buttons > .moneybook {
+    width: 30px;
+    height: 29px;
+    margin: 10px 0 0 20px;
+    background: url("images/sp_deskhome_gnb_140403_opt.png") no-repeat scroll -432px -2px transparent;
+}
+
+header > .personal-menu {
+    height: 100%;
+    text-align: right;
+    float: right;
+}
+header > .personal-menu > .buttons {
+    margin-top: 10px;
+    margin-right: 19px;
+}
+header > .personal-menu > .buttons > .profile {
+    width: 60px;
+    height: 26px;
+    float: left;
+    cursor: pointer;
+}
+header > .personal-menu > .buttons > .profile > .photo {
+    border-radius: 50%;
+    float: left;
+}
+header > .personal-menu > .buttons > .profile > .nickname {
+    margin-left: 5px;
+    padding-top: 7px;
+    color: #fff;
+    float: left;
+}
+header > .personal-menu > .buttons > .profile > .nickname:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+header > .personal-menu > .buttons > .profile > .arrow {
+    width: 5px;
+    height: 4px;
+    margin-top: 12px;
+    margin-left: 3px;
+    float: left;
+    background: url("images/sp_gnb_v5.png") no-repeat scroll -305px -110px transparent;
+}
+header > .personal-menu > .buttons > .notification {
+    width: 15px;
+    height: 17px;
+    margin: 5px 0 0 16px;
+    float: left;
+    cursor: pointer;
+    background: url("images/sp_gnb_v5.png") no-repeat scroll -220px -120px transparent;
+}
+header > .personal-menu > .buttons > .menu {
+    width: 16px;
+    height: 17px;
+    margin: 5px 0 0 20px;
+    float: left;
+    cursor: pointer;
+    background: url("images/sp_gnb_v5.png") no-repeat scroll -260px -120px transparent;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100px;
+    position: fixed;
+    top: 47px;
+    bottom: 30px;
+    min-width: 800px;
+}
+
+.container > .menu {
+    width: 219px;
+    height: 100%;
+    background: #464854;
+    float: left;
+    border-right: 1px solid #31323B;
+}
+.container > .menu > .compose-buttons {
+    width: 220px;
+    height: 69px;
+    border-bottom: #31323B 1px solid;
+    padding: 15px 15px 17px;
+    font-size: 0;
+}
+.container > .menu > .compose-buttons > .compose {
+    width: 95px;
+    height: 36px;
+    display: inline-block;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll 0px 0px transparent;
+}
+.container > .menu > .compose-buttons > .compose > span {
+    width: 90px;
+    height: 36px;
+    float: right;
+    display: block;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll 100% 0px transparent;
+}
+.container > .menu > .compose-buttons > .compose > span > p {
+    width: 88px;
+    height: 16px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll 0px -77px transparent;
+    text-indent: -999px;
+    margin: 10px auto;
+}
+.container > .menu > .compose-buttons > .compose-scheduled {
+    width: 95px;
+    height: 36px;
+    display: inline-block;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll -86px -38px transparent;
+}
+.container > .menu > .compose-buttons > .compose-scheduled > span {
+    width: 90px;
+    height: 36px;
+    float: left;
+    display: block;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll 0px -38px transparent;
+}
+.container > .menu > .compose-buttons > .compose-scheduled > span > p {
+    width: 88px;
+    height: 16px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll -92px -77px transparent;
+    text-indent: -999px;
+    margin: 10px auto;
+}
+
+.container > .menu > .shortcuts {
+    height: 49px;
+    border-bottom: #31323B 1px solid;
+    padding: 7px 15px 10px;
+}
+.container > .menu > .shortcuts > .buttons {
+    text-align: center;
+}
+.container > .menu > .shortcuts > .buttons > div {
+    display: inline-block;
+    margin-left: 22px;
+    font-size: 11px;
+    color: #FFF;
+    letter-spacing: -1px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.container > .menu > .shortcuts > .buttons > div:first-of-type {
+    margin-left: 0px;
+}
+.container > .menu > .shortcuts > .buttons > div > span {
+    display: block;
+}
+.container > .menu > .shortcuts > .buttons > div > a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.container > .menu > .shortcuts > .buttons > div > a:hover {
+    text-decoration: underline;
+}
+.container > .menu > .shortcuts > .buttons > .read > .count {
+    font-size: 11px;
+    font-family: tahoma;
+    color: #0BA506;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+.container > .menu > .shortcuts > .buttons > div > .icon {
+    width: 19px;
+    height: 14px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll transparent;
+    display: inline-block;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+.container > .menu > .shortcuts > .buttons > .favorite > .icon {
+    background-position: 0px -251px;
+    
+}
+.container > .menu > .shortcuts > .buttons > .attachment > .icon {
+    background-position: 2px -274px;
+}
+.container > .menu > .shortcuts > .buttons > .to > .icon {
+    background-position: 0px -297px;
+}
+.container > .menu > .mailbox-nav {
+    border-bottom: #31323B 1px solid;
+    padding: 4px 5px 5px 14px;
+    color: #FFF;
+}
+.container > .menu > .mailbox-nav > ul {
+    margin: 0px;
+    padding: 0px;
+}
+.container > .menu > .mailbox-nav > ul > li {
+    padding: 5px 0 3px 0;
+    line-height: 18px;
+    cursor: pointer;
+}
+.container > .menu > .mailbox-nav > ul > li > span {
+    display: inline-block;
+    height: 18px;
+    padding-left: 23px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll transparent;
+}
+.container > .menu > .mailbox-nav > ul > li > .total {
+    background-position: -159px -169px;
+}
+.container > .menu > .mailbox-nav > ul > li > .receive {
+    background-position: -159px -195px;
+}
+.container > .menu > .mailbox-nav > ul > li > .to-me {
+    background-position: -159px -327px;
+}
+.container > .menu > .mailbox-nav > ul > li > .sended {
+    background-position: -159px -353px;
+}
+.container > .menu > .mailbox-nav > ul > li > .temp {
+    background-position: -159px -222px;
+}
+.container > .menu > .mailbox-nav > ul > li > .btn {
+    float: right;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 7.8pt;
+    height: 18px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: 5px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll 0px -96px transparent;
+}
+.container > .menu > .mailbox-nav > ul > li > a {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #FFF;
+    text-decoration: none !important;
+    border-right: #30323E 1px solid;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+.container > .menu > .mailbox-nav > ul > li > a > i.new {
+    width: 13px;
+    height: 8px;
+    display: inline-block;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -262px -145px transparent;
+}
+.container > .menu > .mailbox-folder {
+    border-bottom: #31323B 1px solid;
+    padding: 3px 15px 2px 14px;
+    color: #FFF;
+
+    background-position: 0px -117px;
+    background-repeat: repeat-x;
+    background-image: url("images/spr_lft_black_140820.png");
+}
+.container > .menu > .mailbox-folder > .my {
+    display: inline-block;
+    font-size: 11px;
+    color: #CECED1;
+    line-height: 18px;
+    font-weight: 400;
+    height: 18px;
+    padding-left: 16px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll 3px -167px transparent;
+}
+.container > .menu > .mailbox-folder > ul {
+    margin: 0px;
+    padding: 0px;
+}
+.container > .menu > .mailbox-folder > ul > li {
+    padding: 5px 0 3px 0;
+    line-height: 18px;
+    cursor: pointer;
+}
+.container > .menu > .mailbox-folder > ul > li > span {
+    display: inline-block;
+    height: 18px;
+    padding-left: 23px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll transparent;
+}
+.container > .menu > .mailbox-sub {
+    border-bottom: #31323B 1px solid;
+    padding: 4px 10px 27px 14px;
+    color: #FFF;
+}
+.container > .menu > .mailbox-sub > ul {
+    margin: 0px;
+    padding: 0px;
+}
+.container > .menu > .mailbox-sub > ul > li {
+    padding: 5px 0 3px 0;
+    line-height: 18px;
+    cursor: pointer;
+}
+.container > .menu > .mailbox-sub > ul > li > span {
+    display: inline-block;
+    height: 18px;
+    padding-left: 23px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll transparent;
+}
+.container > .menu > .mailbox-sub > ul > li > .spam {
+    background-position: -159px -381px;
+}
+.container > .menu > .mailbox-sub > ul > li > .trash {
+    background-position: -159px -407px;
+}
+.container > .menu > .mailbox-sub > ul > li > .number {
+    font-style: normal;
+    font-family: tahoma,helvetica;
+    font-size: 9px;
+    font-weight: 700;
+    color: #49DA37;
+}
+.container > .menu > .mailbox-sub > ul > li > .icon {
+    float: right;
+    width: 18px;
+    height: 18px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll transparent;
+}
+.container > .menu > .mailbox-sub > ul > li > .icon-config {
+    background-position: 3px -210px;
+}
+.container > .menu > .mailbox-sub > ul > li > .icon-config:hover {
+    background-position: -60px -230px;
+}
+.container > .menu > .mailbox-sub > ul > li > .icon-trash {
+    background-position: -39px -209px;
+}
+.container > .menu > .mailbox-sub > ul > li > .icon-trash:hover {
+    background-position: -39px -230px;
+}
+.container > .menu > .mailbox-sub > ul > li > .external {
+    background-position: -159px -433px;
+}
+
+.container > .menu > .ad {
+    padding: 7px 0 0 10px;
+}
+.container > .menu > .ad > .naver-works {
+    height: 27px;
+    display: block;
+    cursor: pointer;
+}
+.container > .menu > .ad > .naver-works > .icon {
+    width: 27px;
+    height: 27px;
+    background: url("images/spr_lft_black_140820.png") no-repeat scroll 0px -476px transparent;
+    float: left;
+    margin-right: 3px;
+}
+.container > .menu > .ad > .naver-works > p {
+    color: #0BA330;
+    font-size: 8pt;
+    padding-top: 7px;
+}
+.container > .menu > .ad > .naver-works > p > strong {
+    color: #fff;
+    font-weight: bold;
+}
+
+.container > .main {
+    position: absolute;
+    left: 220px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.container > .main > .ad-popup {
+    height: 50px;
+    background-color: #F3F8FB;
+    border-bottom: #B0B0B0 1px solid;
+    text-align: center;
+}
+.container > .main > .ad-popup > img {
+    vertical-align: middle;
+}
+.container > .main > .ad-popup > .set-hide {
+    float: right;
+    vertical-align: middle;
+    line-height: 49px;
+    color: #666666;
+    font-size: 8pt;
+    margin-left: -93px;
+    margin-right: 9px;
+}
+
+.container > .main > .search-bar {
+    height: 50px;
+    border-bottom: #E5E5E5 1px solid;
+}
+.container > .main > .search-bar > .wrapper > div {
+    float: left;
+    height: 49px;
+    line-height: 49px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.container > .main > .search-bar > .wrapper > .toggle-menu {
+    width: 18px;
+    height: 49px;
+    border-right: #E5E5E5 1px solid;
+    cursor: pointer;
+    float: left;
+}
+.container > .main > .search-bar > .wrapper > .toggle-menu > .arrow {
+    width: 4px;
+    height: 7px;
+    margin-top: 21px;
+    margin-left: 7px;
+    display: block;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -40px 0px transparent;
+}
+.container > .main > .search-bar > .wrapper > .search {
+    margin-left: 15px;
+}
+.container > .main > .search-bar > .wrapper > .search > .search-box {
+    width: 171px;
+    border: 1px solid #B4B4B4;
+    color: #999;
+    height: 19px;
+    line-height: 21px;
+    padding-left: 4px;
+    display: inline-block;
+}
+.container > .main > .search-bar > .wrapper > .search > .btn {
+    border: 1px solid #B4B4B4;
+    display: inline-block;
+}
+.container > .main > .search-bar > .wrapper > .search > .search-button {
+    width: 27px;
+    height: 23px;
+    margin-left: -1px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll 5px 4px transparent;
+}
+.container > .main > .search-bar > .wrapper > .search > .detail-button {
+    width: 33px;
+    height: 21px;
+    vertical-align: middle;
+    line-height: 21px;
+    text-decoration: none;
+    color: #999;
+    font-size: 11px;
+    margin-left: -1px;
+    padding-left: 4px;
+}
+.container > .main > .search-bar > .wrapper > .search > .detail-button > .arrow-down {
+    width: 10px;
+    height: 4px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -18px 0px transparent;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}
+
+.container > .main > .search-bar > .wrapper > .status {
+    margin-left: 10px;
+    float: left;
+}
+.container > .main > .search-bar > .wrapper > .status > .mailbox {
+    display: inline-block;
+    font-weight: bold;
+}
+.container > .main > .search-bar > .wrapper > .status > .mailbox > .count {
+    display: inline-block;
+    font-weight: none !important;
+    color: #999;
+    margin-left: 5px;
+}
+.container > .main > .search-bar > .wrapper > .status > .mailbox > .count > .unread {
+    font-weight: bold;
+    color: #019A5C;
+}
+.container > .main > .search-bar > .wrapper > .status > .mailbox > .count > .total {
+    font-weight: bold;
+    color: #000;
+}
+.container > .main > .search-bar > .wrapper > .status > .delete-button {
+    display: inline-block;
+    font-size: 11px;
+    color: #999;
+    margin-left: 5px;
+}
+
+.container > .main > .search-bar > .rolling {
+    float: right;
+    margin-right: 10px;
+}
+.container > .main > .search-bar > .rolling > p {
+    font-size: 8pt;
+    color: #666;
+    line-height: 49px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.container > .main > .notice {
+    height: 29px;
+    background-color: #EDF4FB;
+    border-bottom: #E5E5E5 1px solid;
+}
+
+.container > .main > .notice > p {
+    font-size: 9pt;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+    vertical-align: middle;
+}
+.container > .main > .notice > p > a {
+    text-decoration: none;
+    color: #1C5EA0;
+}
+.container > .main > .notice > p > a:hover {
+    text-decoration: underline;
+}
+
+.container > .main > .menu {
+    height: 50px;
+    border-bottom: #DADADA 1px solid;
+}
+.container > .main > .menu > .menu-bar {
+    float: left;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.container > .main > .menu > .menu-bar > .select {
+    border: 1px solid #B4B4B4;
+    border-radius: 3.1px;
+    height: 27px;
+    line-height: 27px;
+    padding: 0px 4px 4px 1px;
+    overflow: visible;
+    text-decoration: none;
+    margin: 0px 2px 0px 0px;
+    display: inline-block;
+}
+.container > .main > .menu > .menu-bar > .select > .arrow-down {
+    width: 10px;
+    height: 4px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -18px 0px transparent;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    left: -1px;
+}
+.container > .main > .menu > .menu-bar > button {
+    border: 1px solid #B4B4B4;
+    border-radius: 3.1px;
+    height: 27px;
+    line-height: 24px;
+    padding: 0px 1px;
+    overflow: visible;
+    text-decoration: none;
+    margin: 0px 2px 0px 0px;
+}
+.container > .main > .menu > .menu-bar > button:disabled {
+    color: #919191;
+    background-color: #F0F0F0;
+    border-color: #CECECE;
+}
+.container > .main > .menu > .menu-bar > .delete {
+    font-weight: bold;
+    margin-left: 1px;
+    padding-right: 2px;
+}
+.container > .main > .menu > .menu-bar > .delete > .icon {
+    width: 10px;
+    height: 7px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -197px 0px transparent;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+}
+.container > .main > .menu > .menu-bar > .spam {
+    font-weight: bold;
+}
+.container > .main > .menu > .menu-bar > .reply {
+    margin-right: -1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-right: 3px;
+}
+.container > .main > .menu > .menu-bar > .reply-all {
+    border-radius: 0px;
+    margin-right: -1px;
+}
+.container > .main > .menu > .menu-bar > .forward {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-left: 3px;
+}
+.container > .main > .menu > .menu-bar > .move > .arrow-down {
+    width: 10px;
+    height: 4px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -18px 0px transparent;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: 0px;
+}
+.container > .main > .menu > .menu-bar > .send {
+    padding-right: 5px;
+}
+.container > .main > .menu > .menu-bar > .send > .icon {
+    width: 19px;
+    height: 16px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -216px 0px transparent;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.container > .main > .menu > .menu-bar > .addon {
+    color: #ccc !important;
+    border: transparent;
+    background-color: transparent !important;
+}
+.container > .main > .menu > .menu-bar > .addon > .arrow-down {
+    width: 10px;
+    height: 4px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -18px 0px transparent;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: 0px;
+}
+.container > .main > .menu > .menu-bar > .filter {
+    color: #333 !important;
+    border: transparent;
+    background-color: transparent !important;
+}
+.container > .main > .menu > .menu-bar > .filter > .arrow-down {
+    width: 10px;
+    height: 4px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -18px 0px transparent;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    left: 0px;
+}
+
+.container > .main > .mail {
+    min-width: 800px;
+    min-height: 480px;
+    position: absolute;
+    top: 179;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: hidden;
+}
+.container > .main > .mail > .mail-list {
+    min-width: 480px;
+    height: 100%;
+    resize: horizontal;
+    overflow: scroll;
+    float: left;
+}
+.container > .main > .mail > .mail-viewer {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container > .main > .mail > .mail-viewer > .spliter {
+    width: 6px;
+    height: 100%;
+    background-color: #f6f6f6;
+    border-right: #ccc 1px solid;
+    border-left: #ccc 1px solid;
+    cursor: ew-resize;
+    float: left;
+}
+.container > .main > .mail > .mail-viewer > .message {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+.container > .main > .mail > .mail-viewer > .message > .msg {
+    overflow: hidden;
+    margin: 0px 15px;
+    padding: 17px 0px 12px;
+    line-height: 18px;
+    color: #383838;
+}
+.container > .main > .mail > .mail-viewer > .message > strong.msg {
+    color: #05B838;
+}
+.container > .main > .mail > .mail-viewer > .message > ul > li {
+    list-style-type: disc;
+    margin-left: -10px;
+    line-height: 18px;
+}
+.container > .main > .mail > .mail-viewer > .message > ul > li > a {
+    color: #383838;
+}
+.container > .main > .mail > .mail-list > .mail-list-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr {
+    min-height: 21px;
+    height: 32px;
+    line-height: 18px;
+    border-bottom: 1px solid #F1F1F1;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > td > a {
+    text-decoration: none;
+    color: #000;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > td > a:hover {
+    text-decoration: underline;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .check {
+    width: 27px;
+    padding-left: 10px;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .favorite {
+    width: 21px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .favorite > input[type=checkbox] {
+    display: none;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .favorite > label {
+    width: 14px;
+    height: 13px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -95px -20px transparent;
+    display: inline-block;
+    cursor: pointer;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .favorite > label:after {
+    content: '';
+    width: 14px;
+    height: 13px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -76px -20px transparent;
+    display: inline-block;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .type {
+    width: 23px;
+    padding-left: 5px;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .type > .icon {
+    width: 22px;
+    height: 20px;
+    cursor: pointer;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -20px -36px transparent;
+    display: block;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .type > .icon-reply {
+    background-position: -86px -36px;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .type > .icon-forward {
+    background-position: -129px -36px;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .attachment {
+    width: 16px;
+    padding-left: 5px;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .attachment > .icon {
+    width: 7px;
+    height: 12px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -66px -20px transparent;
+    display: block;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .sender {
+    width: 110px;
+    padding-left: 8px;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .title {
+    padding-left: 10px;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .title > .zoom {
+    width: 11px;
+    height: 11px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -68px -9px transparent;
+    display: inline-block;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .title > .new-window {
+    width: 11px;
+    height: 13px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -104px 0px transparent;
+    display: inline-block;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .time {
+    width: 100px;
+    color: #666;
+}
+.container > .main > .mail > .mail-list > .mail-list-table > tbody > tr > .size {
+    width: 60px;
+    color: #666;
+    padding-left: 10px;
+}
+
+.container > .main > .mail > .mail-list > .page-navigation {
+    height: 40px;
+    margin-top: -1px;
+    padding-top: 8px;
+    border-top: #DADADA 1px solid;
+    text-align: center;
+}
+.container > .main > .mail > .mail-list > .page-navigation > .buttons {
+    display: block;
+}
+.container > .main > .mail > .mail-list > .page-navigation > .buttons > a {
+    line-height: 20px;
+    text-decoration: none;
+}
+.container > .main > .mail > .mail-list > .page-navigation > .buttons > .nav-first {
+    width: 25px;
+    height: 24px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll 0px -106px transparent;
+    display: inline-block;
+}
+.container > .main > .mail > .mail-list > .page-navigation > .buttons > .nav-previous {
+    width: 25px;
+    height: 24px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -24px -106px transparent;
+    display: inline-block;
+    margin-left: -1px;
+    margin-right: 7px;
+}
+.container > .main > .mail > .mail-list > .page-navigation > .buttons > .nav-next {
+    width: 25px;
+    height: 24px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -52px -80px transparent;
+    display: inline-block;
+    margin-left: 7px;
+}
+.container > .main > .mail > .mail-list > .page-navigation > .buttons > .nav-last {
+    width: 25px;
+    height: 24px;
+    background: url("images/ico_mail_150224.png") no-repeat scroll -76px -80px transparent;
+    display: inline-block;
+    margin-left: -1px;
+}
+.container > .main > .mail > .mail-list > .page-navigation > .buttons > .nav-number {
+    display: inline-block;
+    padding: 0px 8px;
+    color: #333;
+    font-weight: 700;
+    font-family: tahoma;
+    font-size: 12px;
+    vertical-align: top;
+    height: 22px;
+    border: 1px solid transparent;
+}
+.container > .main > .mail > .mail-list > .page-navigation > .buttons > .active {
+    color: #FF3636;
+    border: 1px solid #E9E9E9;
+}
+.container > .main > .mail > .mail-list > .page-navigation > .buttons > a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    width: 100%;
+    height: 30px;
+    background: #FFF;
+    border-top: 1px solid #000;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    min-width: 800px;
+}
+
+footer > .preference {
+    float: left;
+}
+
+footer > .policy {
+    float: right;
+}
+
+footer > .copyright > address {
+    text-align: center;
+    font-size: 6.5pt;
+    font-style: normal;
+    font-family: verdana;
+    color: gray;
+}
+footer > .copyright > address > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #2CB400;
+}
+
+
+
+.blind {
+    display: none;
+}
